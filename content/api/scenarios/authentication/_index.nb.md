@@ -151,14 +151,14 @@ The scopes is copied. The `orgNumber` and `org` is added by the token converter.
 
 ## Authentication for end user system
 
-End user systems should be authentication with [ID-porten](https://difi.github.io/felleslosninger/idporten_overordnet.html).
+End user systems could be authenticated with [ID-porten](https://difi.github.io/felleslosninger/idporten_overordnet.html).
 When authenticated the system may exchange an access token provided by ID-porten with an Altinn token by instructions below.
 
 #### Exchange of JWT token
 
 This token has to be validated and replaced with an *Altinn JWT access token* which should be used to access the apis.
 
-**IT IS IMPORTANT THAT THE USER HAS PROFILE IN ALTINN. Profile is automatic created when login in to portal** 
+**IT IS IMPORTANT THAT THE USER HAS A PROFILE IN ALTINN. A profile is automatically created when the user logs on to Altinn** 
 
 ##### ID-porten JWT access token (input)
 
@@ -237,7 +237,7 @@ Metadata about Altinn as an Open ID provider is exposed as a .well-known endpoin
 by [OpenID Connect Discovery](https://openid.net/specs/openid-connect-discovery-1_0.html#ProviderConfig).
 
 The primary porpose of this endpoint is to make available the Altinn signing certificate for the JSON Web Tokens being generated.
-It is recommended that clients of Altinn use this discovery endpoint to automatically have their systems updated when Altinn changes their signing certificate.
+It is recommended that clients of Altinn use this discovery endpoint to automatically have their systems updated when Altinn changes it's signing certificate.
 
 | Environment | URL                                                                                                |
 | ----------- | -------------------------------------------------------------------------------------------------- |
